@@ -1,0 +1,55 @@
+ *{
+    margin: 0;
+    padding: 0;
+ }
+ div {
+    height: 100px;
+    width: 100px;
+    background: skyblue;
+    border: 2px solid black;
+    display: inline-block;
+   
+}
+
+#box1 {
+    position: static;
+    background-color: rgb(136, 226, 19);
+    /* height: 400px; */ 
+    /* top: 1px; */
+}
+#box2 {
+    position: relative;
+    background-color: aqua;
+    top: 20px;
+    left: 10px;
+}
+#box3 { /* it's follow colsed positioned ancestor now ancestor is body  */
+    position: absolute; 
+    background-color: rgb(249, 200, 6);
+    top: 20px;
+    left: 10px;
+}
+
+#box4 {  /*position relative to the browser remove from document flow */
+    position: fixed;
+    background-color: rgb(197, 181, 239);
+    height: 30px;
+    bottom: 0;
+    right: 10px;
+    width: 100vw;
+
+}
+
+#box5{
+    position: sticky;
+    background-color: rgb(47, 240, 195);
+    top: 0px;
+}
+
+
+/* Z-INDEX{ It decides the stack level of elements
+1st (lower)2nd (upper)
+z-index:auto(0)
+z-index:1/2...upperside
+z-index:-1/-2 downside
+} */
